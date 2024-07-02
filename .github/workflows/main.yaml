@@ -61,7 +61,7 @@ jobs:
 
       - name: Pull latest Docker image from ECR
         run: |
-          docker pull807429863132.dkr.ecr.eu-north-1.amazonaws.com/studentperformance:latest
+          docker pull 807429863132.dkr.ecr.eu-north-1.amazonaws.com/studentperformance:latest
 
       - name: Stop and remove previous container if running
         run: |
