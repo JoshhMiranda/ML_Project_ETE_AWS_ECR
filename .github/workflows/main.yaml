@@ -61,7 +61,6 @@ jobs:
 
       - name: Pull latest Docker image from ECR
         run: |
-          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
           docker pull 807429863132.dkr.ecr.eu-north-1.amazonaws.com/studentperformance:latest
 
       - name: Stop and remove previous container if running
